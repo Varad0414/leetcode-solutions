@@ -1,0 +1,22 @@
+import java.util.*;
+
+class Solution {
+    public boolean isPalindrome(int x) {
+        if(x<0){
+            return false;
+        }
+        else{
+            String str = Integer.toString(x);
+            StringBuffer str2 = new StringBuffer(str);
+            StringBuffer rev = str2.reverse();
+            String rev1 = new String(rev);
+            if(str.equals(rev1)){
+                return true;
+            }
+            else{
+                return false;
+            }
+        }
+        
+    }
+}
